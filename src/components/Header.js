@@ -7,7 +7,7 @@ function Header() {
         <header>
             <Box bgGradient="linear(to-r, #43cea2, #185a9d)" py={10}>
                 <Flex flexDirection="column" alignItems="center" gap={3}>
-                    <Avatar size="2xl" src={myImage}/>
+                    <Avatar size="2xl" src={myImage} alt="My image"/>
                     <Heading size="md" color="ghostwhite">ALMAI Ali</Heading>
                     <Heading size="md" color="ghostwhite">Futur ingénieur en Informatique</Heading>
                 </Flex>
