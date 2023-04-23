@@ -69,7 +69,7 @@ function Certifications() {
                         <CardBody py={1}>
                             <UnorderedList>
                                 <ListItem>{certification.issuingOrg}</ListItem>
-                                <ListItem>Credential ID: {certification.credentialID}</ListItem>
+                                <ListItem>ID d'identification: {certification.credentialID}</ListItem>
                             </UnorderedList>
                         </CardBody>
                         <CardFooter pt={1} w="full">
