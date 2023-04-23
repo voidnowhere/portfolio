@@ -9,7 +9,7 @@ function Header() {
                 <Flex flexDirection="column" alignItems="center" gap={3}>
                     <Avatar size="2xl" src={myImage} alt="My image"/>
                     <Heading size="md" color="ghostwhite">ALMAI Ali</Heading>
-                    <Heading size="md" color="ghostwhite">Futur ingénieur en Informatique</Heading>
+                    <Heading size="md" color="ghostwhite">Étudiant ingénieur en informatique</Heading>
                 </Flex>
             </Box>
             <Flex as="nav" py={5} justifyContent="center" flexWrap="wrap" gap={5}>
