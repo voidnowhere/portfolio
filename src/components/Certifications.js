@@ -59,7 +59,7 @@ function Certifications() {
                     <Card key={index} w={certification.width} cursor="pointer"
                           onClick={() => window.open(certification.credentialURL, "_blank")}>
                         <Image src={certification.image} w={certification.width} h={certification.height}
-                               borderRadius='lg'/>
+                               borderRadius='lg' alt={certification.issuingOrg + ' ' + certification.credentialID}/>
                         <CardHeader pb={1}>
                             <Flex alignItems="center">
                                 <Heading size="md" flexGrow={1}>{certification.name}</Heading>
