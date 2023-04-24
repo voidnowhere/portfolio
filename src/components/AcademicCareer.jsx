@@ -1,6 +1,6 @@
 import {Card, CardBody, CardFooter, CardHeader, Flex, Heading, Link, Text} from "@chakra-ui/react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 import {CalendarIcon, ExternalLinkIcon} from "@chakra-ui/icons";
 
 function AcademicCareer() {
