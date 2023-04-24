@@ -33,7 +33,7 @@ function Experiences() {
             <Header/>
             <Flex flexDirection="column" alignItems="center" gap={5} mb={16}>
                 {experiences.map((experience, index) => (
-                    <Card key={index} mx={10} w={{sm: "450px", md: "600px"}}>
+                    <Card key={index} mx={5} w={{sm: "450px", md: "600px"}}>
                         <CardHeader pb={1}>
                             <Flex alignItems="center">
                                 <Heading size="md">

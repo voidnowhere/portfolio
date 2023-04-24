@@ -36,7 +36,7 @@ function AcademicCareer() {
             <Header/>
             <Flex flexDirection="column" alignItems="center" gap={5} mb={16}>
                 {careers.map((career, index) => (
-                    <Card key={index} mx={10} w={{sm: "450px", md: "600px"}}>
+                    <Card key={index} mx={5} w={{sm: "450px", md: "600px"}}>
                         <CardHeader pb={1}>
                             <Heading size="md">{career.status}</Heading>
                         </CardHeader>
