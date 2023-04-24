@@ -1,9 +1,9 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Home from "./components/Home";
-import AcademicCareer from "./components/AcademicCareer";
-import Experiences from "./components/Experiences";
-import Projects from "./components/Projects";
-import Certifications from "./components/Certifications";
+import Home from "./components/Home.jsx";
+import AcademicCareer from "./components/AcademicCareer.jsx";
+import Experiences from "./components/Experiences.jsx";
+import Projects from "./components/Projects.jsx";
+import Certifications from "./components/Certifications.jsx";
 
 const router = createBrowserRouter([
     {path: "/", element: <Home/>,},
