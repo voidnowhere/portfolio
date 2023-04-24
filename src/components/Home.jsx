@@ -7,7 +7,7 @@ function Home() {
         <>
             <Header/>
             <Center>
-                <Card mx={10} w={{sm: "450px", md: "600px"}} mb={16}>
+                <Card mx={5} w={{sm: "450px", md: "600px"}} mb={16}>
                     <CardBody>
                         <Text align="justify">
                             Je vise à être un ingénieur en informatique et réseau option MIAGE (méthodes informatiques
