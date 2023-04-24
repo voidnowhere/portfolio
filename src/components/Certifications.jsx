@@ -104,7 +104,7 @@ function Certifications() {
                     {certifications
                         .sort((c1, c2) => c2.issueDate - c1.issueDate)
                         .map((certification, index) => (
-                            <Card key={index} w={certification.width} h={425}>
+                            <Card key={index} w={certification.width} minH={425}>
                                 <Image src={certification.image} w={certification.width} h={certification.height}
                                        borderRadius='lg'
                                        alt={certification.issuingOrg + ' ' + certification.credentialID}/>
