@@ -4,7 +4,6 @@ import AcademicCareer from "./components/AcademicCareer.jsx";
 import Experiences from "./components/Experiences.jsx";
 import Projects from "./components/Projects.jsx";
 import Certifications from "./components/Certifications.jsx";
-import {Analytics} from '@vercel/analytics/react';
 
 const router = createBrowserRouter([
     {path: "/", element: <Home/>,},
@@ -16,10 +15,7 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <>
-            <RouterProvider router={router}/>
-            <Analytics/>
-        </>
+        <RouterProvider router={router}/>
     );
 }
 
