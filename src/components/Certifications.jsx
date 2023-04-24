@@ -99,40 +99,40 @@ function Certifications() {
     return (
         <>
             <Header/>
-                <Flex flexWrap="wrap" justifyContent="center" alignItems="center" mx="auto" px={10} gap={5} mb={16}
-                      maxW={1200}>
-                    {certifications
-                        .sort((c1, c2) => c2.issueDate - c1.issueDate)
-                        .map((certification, index) => (
-                            <Card key={index} w={certification.width} minH={425}>
-                                <Image src={certification.image} w={certification.width} h={certification.height}
-                                       borderRadius='lg'
-                                       alt={certification.issuingOrg + ' ' + certification.credentialID}/>
-                                <CardHeader pb={1} cursor="pointer"
-                                            onClick={() => window.open(certification.credentialURL, "_blank")}>
-                                    <Flex alignItems="center">
-                                        <Heading size="md" flexGrow={1}>{certification.name}</Heading>
-                                        <ExternalLinkIcon mx='2px'/>
-                                    </Flex>
-                                </CardHeader>
-                                <CardBody py={1}>
-                                    <UnorderedList>
-                                        <ListItem>{certification.issuingOrg}</ListItem>
-                                        <ListItem>ID d'identification: {certification.credentialID}</ListItem>
-                                    </UnorderedList>
-                                </CardBody>
-                                <CardFooter pt={1} w="full">
-                                    <Flex alignItems="center" gap={2}>
-                                        <CalendarIcon/>
-                                        <Text>{renderDate(certification.issueDate, {
-                                            year: 'numeric',
-                                            month: 'long'
-                                        })}</Text>
-                                    </Flex>
-                                </CardFooter>
-                            </Card>
-                        ))}
-                </Flex>
+            <Flex flexWrap="wrap" justifyContent="center" alignItems="center" mx="auto" px={10} gap={5} mb={16}
+                  maxW={1200}>
+                {certifications
+                    .sort((c1, c2) => c2.issueDate - c1.issueDate)
+                    .map((certification, index) => (
+                        <Card key={index} w={certification.width} minH={{base: "auto", sm: "425"}}>
+                            <Image src={certification.image} w={certification.width} borderRadius='lg'
+                                   h={{base: "auto", sm: certification.height}}
+                                   alt={certification.issuingOrg + ' ' + certification.credentialID}/>
+                            <CardHeader pb={1} cursor="pointer"
+                                        onClick={() => window.open(certification.credentialURL, "_blank")}>
+                                <Flex alignItems="center">
+                                    <Heading size="md" flexGrow={1}>{certification.name}</Heading>
+                                    <ExternalLinkIcon mx='2px'/>
+                                </Flex>
+                            </CardHeader>
+                            <CardBody py={1}>
+                                <UnorderedList>
+                                    <ListItem>{certification.issuingOrg}</ListItem>
+                                    <ListItem>ID d'identification: {certification.credentialID}</ListItem>
+                                </UnorderedList>
+                            </CardBody>
+                            <CardFooter pt={1} w="full">
+                                <Flex alignItems="center" gap={2}>
+                                    <CalendarIcon/>
+                                    <Text>{renderDate(certification.issueDate, {
+                                        year: 'numeric',
+                                        month: 'long'
+                                    })}</Text>
+                                </Flex>
+                            </CardFooter>
+                        </Card>
+                    ))}
+            </Flex>
             <Footer/>
         </>
     )
