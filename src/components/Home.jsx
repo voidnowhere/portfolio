@@ -12,8 +12,8 @@ function Home() {
                         <Text align="justify">
                             Je vise à être un ingénieur en informatique et réseau option MIAGE (méthodes informatiques
                             appliquées à la gestion d’entreprise), dont je rêvais d'être depuis mes premiers âges et me
-                            voilà maintenant avec la bénédiction du dieu je le serai bien tôt. Développer un logiciel
-                            est un art, maintenant puisque je suis capable de développer des logiciels, j'aimerais
+                            voilà maintenant avec la bénédiction du dieu je le serai bien tôt. Développer une application
+                            est un art, maintenant puisque je suis capable de développer des applications, j'aimerais
                             collaborer avec vous pour satisfaire vos besoins.
                         </Text>
                     </CardBody>
