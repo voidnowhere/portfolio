@@ -19,7 +19,7 @@ function Experiences() {
         {
             status: "Stagiaire",
             content: "Realisation d'une application web pour la gestion des services touristiques divers.",
-            technology: "L'application web est développée avec Laravel, MySQL.",
+            technology: "L'application web est développée avec Laravel, MySQL, Tailwind CSS.",
             reception: {
                 name: "NETDEV Sarl, Marrakech.",
                 webpage: "https://www.netdevmaroc.com/",
