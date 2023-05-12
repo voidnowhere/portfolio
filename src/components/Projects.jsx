@@ -1,4 +1,15 @@
-import {Card, CardBody, CardFooter, CardHeader, Flex, Heading, ListItem, Text, UnorderedList} from "@chakra-ui/react";
+import {
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    Flex,
+    Heading,
+    Link,
+    ListItem,
+    Text,
+    UnorderedList
+} from "@chakra-ui/react";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import {CalendarIcon, ExternalLinkIcon} from "@chakra-ui/icons";
@@ -87,16 +98,13 @@ function Projects() {
                     .map((project, index) => (
                         <Card key={index} mx={5} w={{sm: "450px", md: "600px"}}>
                             <CardHeader pb={1}>
-                                <Flex alignItems="center" gap={1} cursor={(project.url) ? "pointer" : "default"}
-                                      onClick={() => (project.url) ? window.open(project.url, "_blank") : null}>
+                                <Flex alignItems="center">
                                     <Heading size="md">
-                                        {project.name}
+                                        <Link href={project.url} isExternal>
+                                            <Text>{project.name}</Text>
+                                        </Link>
                                     </Heading>
-                                    {
-                                        project.url
-                                        &&
-                                        <ExternalLinkIcon mx='2px'/>
-                                    }
+                                    <ExternalLinkIcon mx='2px'/>
                                 </Flex>
                             </CardHeader>
                             <CardBody py={1}>
